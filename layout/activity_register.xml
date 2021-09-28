@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#353336"
+    tools:context=".Register">
+
+    <Button
+        android:id="@+id/btnsignup"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addr"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="161dp"
+        android:background="#00FFFFFF"
+        android:checkable="false"
+        android:clickable="true"
+        android:cursorVisible="false"
+        android:text="註冊"
+        android:textColor="#7ED7F7"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/idnum"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phone"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="02dp"
+        android:layout_marginEnd="31dp"
+        android:hint="身分證字號"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#7E7E7E"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/addr"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idnum"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="31dp"
+        android:hint="戶籍地址"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#7E7E7E"
+        android:textIsSelectable="false"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="02dp"
+        android:layout_marginEnd="31dp"
+        android:hint="手機號碼"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#7E7E7E"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="209dp"
+        android:layout_marginEnd="31dp"
+        android:hint="真實姓名"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#7E7E7E"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="31dp"
+        android:hint="密碼"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#7E7E7E"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/repassword"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="31dp"
+        android:hint="再次輸入密碼"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#7E7E7E"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/birthday"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/repassword"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="31dp"
+        android:hint="生日"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#7E7E7E"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/birthday"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="02dp"
+        android:layout_marginEnd="31dp"
+        android:hint="e-mail"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#7E7E7E"
+        android:textSize="18dp" />
+
+    <LinearLayout
+        android:id="@+id/new_registor_img_layout"
+        android:layout_width="match_parent"
+        android:layout_height="203dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="註冊入場寶"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:background="#353336"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/choose"
+        android:layout_width="289dp"
+        android:layout_height="72dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="72dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/attendee"
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="參與方"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp" />
+
+        <RadioButton
+            android:id="@+id/host"
+            android:layout_width="91dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="主辦方"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp" />
+
+    </RadioGroup>
+
+</RelativeLayout>
